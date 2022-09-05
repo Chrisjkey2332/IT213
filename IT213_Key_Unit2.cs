@@ -124,6 +124,11 @@ namespace IT213_Key_Unit2
 
             int day;
 
+            //Request user to select day
+
+            Console.WriteLine("Enter the number of the day of the week: ");
+            day = Convert.ToInt32(Console.ReadLine());
+
             //Week Switch
 
             switch (day)
@@ -150,7 +155,7 @@ namespace IT213_Key_Unit2
                     Console.WriteLine("Saturday");
                     break;
                 default:
-                    Console.WriteLine("Invalid day.")
+                    Console.WriteLine("Invalid day.");
                     break;
             }
             Console.Read();
