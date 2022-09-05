@@ -52,7 +52,28 @@ namespace IT213_Key_Unit3
                     Console.WriteLine("k = {0} i = {1}", k, i);
                 }
             }
+
+            //*********************************************************
+            //****Assignment 3 Section 3
+            //*********************************************************
             
+            //Set value for integers
+            int numberEntered;
+            int numberTotal;
+
+            //Wierd comment again
+            Console.WriteLine("\n\n**** Assignment 3: Section 3 - While Loop With Sentinel ****\n");
+
+            //Keep prompting user to enter numbers
+            while(numberEntered != -1){
+                Console.WriteLine("Enter a positive number to be added to the total or -1 to end.");
+                numberEntered = Convert.ToInt32(Console.ReadLine());
+                if (numberEntered != -1) {
+                    numberTotal = numberTotal + numberEntered;
+                }
+            }
+            Console.WriteLine("The sum of all numbers entered is " + numberTotal);
+            Console.Read();
         }   
     }
 }
