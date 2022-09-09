@@ -24,7 +24,7 @@ namespace IT213_Key_Unit3
             Console.WriteLine("**** Assignment 3: Section 1 - While Loop to Average Grades ****\n");
 
             //Loop part
-            while(gradeCount < 11){
+            while(gradeCount <= 10){
                 Console.WriteLine("Enter another grade: ");
                 grade = Convert.ToInt32(Console.ReadLine());
                 gradeTotal = gradeTotal + grade;
