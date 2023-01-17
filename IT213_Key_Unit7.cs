@@ -1,34 +1,38 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace IT213_Unit7
+namespace IT213_Key_Unit7
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
             double temp1 = 35.5;
             double tempF = fahrenheit(temp1);
-            weatherStatement (tempF);
+            weatherStatement(tempF);
 
             double temp2 = 30.5;
-            double tempF = fahrenheit(temp2);
-            weatherStatement (tempF);            
+            tempF = fahrenheit(temp2);
+            weatherStatement(tempF);
 
             double temp3 = 22.2;
-            double tempF = fahrenheit(temp3);
-            weatherStatement (tempF);
+            tempF = fahrenheit(temp3);
+            weatherStatement(tempF);
 
             double temp4 = 16.1;
-            double tempF = fahrenheit(temp4);
-            weatherStatement (tempF);
+            tempF = fahrenheit(temp4);
+            weatherStatement(tempF);
 
             double temp5 = 7.3;
-            double tempF = fahrenheit(temp5);
-            weatherStatement (tempF);
+            tempF = fahrenheit(temp5);
+            weatherStatement(tempF);
 
             double temp6 = -1;
-            double tempF = fahrenheit(temp6);
-            weatherStatement (tempF);
+            tempF = fahrenheit(temp6);
+            weatherStatement(tempF);
 
             Console.Read();
         }
@@ -36,31 +40,31 @@ namespace IT213_Unit7
         public static double fahrenheit(double myTemp)
         {
             Console.Write("The temperature is " + myTemp + "C or ");
-            double tempF = (9.0/5.0*myTemp+32);
+            double tempF = (9.0 / 5.0 * myTemp + 32);
             tempF = Math.Round(tempF, 1);
             Console.WriteLine(tempF + " F. ");
             return tempF;
         }
 
-        public static void weatherStatement (double tempF)
+        public static void weatherStatement(double tempF)
         {
-            if(tempF >= 95)
+            if (tempF >= 95)
             {
                 Console.WriteLine("A heat advisory has been issued.");
             }
-            else if(tempF >= 85)
+            else if (tempF >= 85)
             {
                 Console.WriteLine("Pleasant but warm.");
             }
-            else if(tempF >= 70)
+            else if (tempF >= 70)
             {
                 Console.WriteLine("Very pleasant weather today.");
             }
-            else if(tempF >= 50)
+            else if (tempF >= 50)
             {
                 Console.WriteLine("Pleasant but cool");
             }
-            else if(tempF >= 33)
+            else if (tempF >= 33)
             {
                 Console.WriteLine("Cold weather.");
             }
